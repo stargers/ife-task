@@ -1,0 +1,36 @@
+.container{
+	width: 900px;
+	height: 500px;
+	position: relative;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.leftList{
+	width: 200px;
+	height: 500px;
+	float: left;
+	list-style: none;
+	border: 1px solid #000;
+}
+
+.rightList{
+	width: 200px;
+	height: 500px;
+	float: left;
+	margin-left: 100px;
+	list-style: none;
+	border: 1px solid #000;
+}
+
+.container li{
+	width: 200px;
+	height: 60px;
+	list-style: none;
+	position: absolute;
+	border-bottom: 1px solid #000;
+	cursor: move;
+}

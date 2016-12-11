@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两列布局-绝对定位</title>
+	<style>
+		body{
+			margin: 0px;
+		}
+		.firstLine{
+			position: relative;
+			background-color: #fff;
+		}
+		.left{
+			position: absolute;
+			top: 0;					//自适应高度
+			left: 0;
+			bottom: 0;
+			background-color: red;
+			width: 300px;
+		}
+		.right{
+			background-color: black;
+			height: 200px;
+			margin-left: 300px;
+		}
+		.secondLine{
+			background-color: orange;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="firstLine">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	<div class="secondLine"></div>
+</body>
+</html>

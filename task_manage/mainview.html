@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>任务管理系统</title>
+    <link rel="stylesheet" type="text/css" href="resource/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="pageContainer">
+        <div class="header">
+            GTD Tools
+        </div>
+        <div class="body">
+            <div class="detailContainer">
+            </div>
+            <div class="programList">
+                <ul>
+                    <li class="totalPadding">
+                        全部任务
+                        <ul class="totalTaskList">
+
+                        </ul>
+                    </li>
+                    <li class="totalPadding proList">
+                        分类列表
+                        <ul class="typeList">
+                            <li class="proClass currentTaskList">
+                                <span class="glyphicon glyphicon-folder-open"></span> 默认分类
+                                <ul class="currentTaskList">
+                                    <li>
+                                        <span class="glyphicon glyphicon-paperclip"></span>
+                                    </li>
+                                    <li>2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer-add">
+                    <span class="glyphicon glyphicon-import"></span> 新增分类
+                </div>
+            </div>
+            <div class="taskList"></div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="util.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+</html>

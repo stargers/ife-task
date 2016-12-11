@@ -1,0 +1,103 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: Microsoft Yahei;
+}
+
+html , body{
+	height: 100%;
+}
+
+.pageContainer{
+	height: 100%;
+	overflow: hidden;
+}
+
+.header{
+	position: absolute;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #ededed;
+    color: #111;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.body{
+	margin-top: 50px;
+	height: 100%;
+}
+
+.programList, .taskList , .detailContainer{
+	float: left;
+	position: relative;
+	border: 1px solid #bfbfbf;
+	height: 100%;
+}
+
+/* 项目列表 */
+.programList{
+	width: 200px;
+	background-color: #eee;
+	margin-left: -100%;
+	left: -350px;
+	list-style-type: none;
+}
+
+/* 项目任务列表 */
+.taskList{
+	width: 150px;
+	background-color: #ddd;
+	margin-left: -100%;
+	left: -150px;
+}
+
+/* 任务详情页 */
+.detailContainer{
+	width: 100%;
+	background-color: #ccc;
+	margin-left: 350px;
+}
+
+/* 新增项目分类 */
+.footer-add {
+    position: absolute;
+    bottom: 50px;
+    height: 50px;
+    width: 100%;
+    background-color: #ccc;
+    border: 1px solid #bfbfbf;
+    margin: -1px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.totalPadding{
+	padding: 5px 10px;
+	cursor: default;
+}
+
+.proClass{
+	cursor: pointer;
+	padding: 5px;
+	list-style-type: none;
+}
+
+.proClass > .currentTaskList{
+	display: none;
+	list-style-type: none;
+}
+
+.currentTaskList > li{
+	padding-left: 10px;
+}
+
+.active > .currentTaskList {
+	display: block;
+	list-style-type: none;
+}
+
+

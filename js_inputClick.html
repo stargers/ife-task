@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js最基础</title>
+</head>
+<body>
+	<input type="number" id="number1">
+	<input id="number2" type="number">
+	<span  id="result"></span>
+	<button id="addBtn"></button>
+
+		<script>
+		/**
+		 * 	id选择器
+		 * @param  {[type]} id [description]
+		 * @return {[type]}    [description]
+		 */
+		function $(id) {
+			console.log(document.getElementById(id));
+			console.log(id);
+			return document.getElementById(id);
+		};
+
+		function add(num1, num2){
+			return num1 + num2;
+		}
+
+		function addEventHandle(){
+			var value1 = parseInt($('number1').value);
+			var value2 = parseInt($('number2').value);
+			console.log(typeof value1);
+
+			var result = add(value1, value2);
+			$('result').innerHTML  = result;
+		}
+
+		$('addBtn').addEventListener('click',addEventHandle);
+	</script>
+</body>
+</html>

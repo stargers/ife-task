@@ -1,0 +1,9 @@
+.center{
+	margin: 0px auto;
+	width: 50%;
+}
+.timeText{
+	text-align: center;
+	font-size: 20px;
+    line-height: 20px;
+}

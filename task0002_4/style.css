@@ -1,0 +1,13 @@
+.inputBox{
+
+}
+
+.suggest{
+	display: none;
+	list-style: none;
+    width: 300px;
+}
+
+.suggest li:hover{
+	background: red;
+}

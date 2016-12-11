@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圣杯三列布局</title>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		.main , .left , .right{
+			height: 50px;
+			float: left;
+			position: relative;
+		}
+
+
+		.bd{
+			padding-left: 200px;
+			padding-right: 150px;
+			min-width: 200px;	//只要最小宽度大于左侧定宽栏就行
+		}
+
+		.left{
+			background-color: #E79F6D;
+			width: 200px;
+			margin-left: -100%;
+			left: -200px;
+		}
+		.main{
+			width: 100%;
+			background-color: #e6e6e6;
+			
+		}
+		.right{
+			width: 150px;
+			background-color: #7bd;
+			margin-left: -150px;
+			right: -150px;
+		}
+	</style>
+</head>
+<body>
+	<div class="bd">
+		<div class="main">main</div>
+		<div class="left">left</div>
+		<div class="right">right</div>
+		
+
+	</div>
+</body>
+</html>

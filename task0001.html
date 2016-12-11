@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	两列布局-浮动</title>
+	<style>	
+	body{
+		margin: 0px;
+	}
+		.topLeft{
+			background-color: red;
+			width: 600px;
+			float: left;
+			font-size: 40px;
+			height: 200px;
+		}
+		.topRight{
+			background-color: black;
+			margin-left: 600px;		
+			font-size: 40px;
+			margin-left: -300px;		//自适应高度
+         	padding-bottom: 9999px;
+         	margin-bottom: -9999px;
+		}
+		.main{
+			background-color: orange;
+			height: 200px;
+			font-size:40px;
+			width: 100%;
+		}
+		.firstline{
+ 			overflow: hidden;
+         	color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="firstline">
+		<div class="topLeft"></div>
+		<div class="topRight"></div>
+	</div>
+	<div class="main"></div>
+</body>
+</html>
